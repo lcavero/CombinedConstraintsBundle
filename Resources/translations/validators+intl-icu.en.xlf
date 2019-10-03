@@ -4,7 +4,7 @@
         <body>
             <trans-unit id="required">
                 <source>required</source>
-                <target>This field is required</target>
+                <target>This field is required LCV</target>
             </trans-unit>
         </body>
     </file>
