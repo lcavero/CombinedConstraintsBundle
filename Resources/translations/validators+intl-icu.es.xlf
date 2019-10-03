@@ -26,6 +26,11 @@
                 <source>lcv.charset_mismatch</source>
                 <target>Este valor no coincide con el formato esperado, se esperaba un {{ charset }}</target>
             </trans-unit>
+
+            <trans-unit id="lcv.invalid_emai">
+                <source>lcv.invalid_email</source>
+                <target>No es un email válido</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
