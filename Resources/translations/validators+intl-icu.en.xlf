@@ -27,9 +27,14 @@
                 <target>This value does not match the expected {{ charset }} charset</target>
             </trans-unit>
 
-            <trans-unit id="lcv.invalid_emai">
+            <trans-unit id="lcv.invalid_email">
                 <source>lcv.invalid_email</source>
                 <target>Invalid email</target>
+            </trans-unit>
+
+            <trans-unit id="lcv.invalid_phone">
+                <source>lcv.invalid_phone</source>
+                <target>Invalid phone number</target>
             </trans-unit>
         </body>
     </file>
