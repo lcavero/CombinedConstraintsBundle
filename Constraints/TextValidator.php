@@ -1,6 +1,5 @@
 <?php
 
-
 namespace LCV\CombinedConstraintsBundle\Constraints;
 
 use Symfony\Component\Validator\Constraint;
