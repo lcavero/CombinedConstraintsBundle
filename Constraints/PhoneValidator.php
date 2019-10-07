@@ -45,7 +45,7 @@ class PhoneValidator extends ConstraintValidator
             $value = call_user_func($constraint->normalizer)($value);
         }
 
-        if (preg_match("/^(\+?\(?\d+-?\)?\s?){1}(\d+-?\s?)+$/", $value)) {
+        if (!preg_match("/^(\+?\(?\d+-?\)?\s?){1}(\d+-?\s?)+$/", $value)) {
             $this->context->buildViolation($constraint->invalidMessage)
                 ->setParameter('{{ value }}', $this->formatValue($value))
                 ->setCode(Phone::REGEX_FAILED_ERROR)
