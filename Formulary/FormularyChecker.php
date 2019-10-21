@@ -2,8 +2,8 @@
 
 namespace LCV\CombinedConstraintsBundle\Formulary;
 
-use LCV\ExceptionPackBundle\Exception\EmptyFormularyException;
-use LCV\ExceptionPackBundle\Exception\InvalidFormularyNameException;
+use LCV\CombinedConstraintsBundle\Exception\EmptyFormularyException;
+use LCV\CombinedConstraintsBundle\Exception\InvalidFormularyNameException;
 use Symfony\Component\Form\Form;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;

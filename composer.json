@@ -15,12 +15,13 @@
         }
     ],
     "require": {
-        "php": "^5.5|^7.0",
-        "lcv/exception-pack-bundle": "^1.0",
-        "symfony/form": "~3.4|~4.0",
-        "symfony/framework-bundle": "~3.4|~4.0",
+        "php": "^7.2",
+        "lcv/common-exceptions": "^1.0",
+        "symfony/form": "~4.3",
+        "symfony/framework-bundle": "~4.3",
         "symfony/polyfill-intl-messageformatter": "^1.12",
-        "symfony/validator": "~3.4|~4.0"
+        "symfony/validator": "~4.3",
+        "ext-intl": "*"
     },
     "config": {
         "sort-packages": true
