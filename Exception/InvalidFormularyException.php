@@ -2,9 +2,9 @@
 
 namespace LCV\CombinedConstraintsBundle\Exception;
 
-use LCV\CommonExceptions\Exception\ApiException;
+use LCV\CommonExceptions\Exception\InvalidConstraintsException;
 
-class InvalidFormularyException extends ApiException
+class InvalidFormularyException extends InvalidConstraintsException
 {
     protected $constraintsErrors;
 
@@ -15,7 +15,7 @@ class InvalidFormularyException extends ApiException
                                 $statusCode = 400)
     {
         $this->constraintsErrors = $constraintsErrors;
-        parent::__construct($statusCode, $message, $translationParams, $previous);
+        parent::__construct($constraintsErrors, $message, $translationParams, $previous, $statusCode);
     }
 
     /**
