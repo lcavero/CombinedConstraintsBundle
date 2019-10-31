@@ -4,6 +4,7 @@ namespace LCV\CombinedConstraintsBundle\Formulary;
 
 use LCV\CombinedConstraintsBundle\Exception\EmptyFormularyException;
 use LCV\CombinedConstraintsBundle\Exception\InvalidFormularyNameException;
+use LCV\CombinedConstraintsBundle\Exception\NotSubmittedFormularyException;
 use Symfony\Component\Form\Form;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -30,7 +31,11 @@ class FormularyChecker
      */
     public function validate(FormInterface $form, Request $request)
     {
-        if($form->isSubmitted()&& $form->isValid()){
+        if(!$form->isSubmitted()){
+            throw new NotSubmittedFormularyException();
+        }
+
+        if($form->isValid()){
             return false;
         }else{
             $this->chekEmptyForm($form, $request);

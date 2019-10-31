@@ -16,6 +16,11 @@
                 <source>lcv.invalid_formulary_name</source>
                 <target>Can't find data in the request body. Formulary name should be { name }</target>
             </trans-unit>
+
+            <trans-unit id="lcv.not_submitted_formulary">
+                <source>lcv.not_submitted_formulary</source>
+                <target>Formulary not submitted, maybe you forgot to add PATCH/PUT method in formulary options</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

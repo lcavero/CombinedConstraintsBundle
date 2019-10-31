@@ -16,6 +16,11 @@
                 <source>lcv.invalid_formulary_name</source>
                 <target>No se han encontrado los datos en el cuerpo de la petición. El nombre de formulary debe ser { name }</target>
             </trans-unit>
+
+            <trans-unit id="lcv.not_submitted_formulary">
+                <source>lcv.not_submitted_formulary</source>
+                <target>El formulario no se ha subido, quizás olvidaste incluir PATCH/PUT en las opciones de formulario</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
