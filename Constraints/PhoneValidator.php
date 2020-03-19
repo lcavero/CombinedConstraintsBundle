@@ -31,6 +31,10 @@ class PhoneValidator extends ConstraintValidator
             return;
         }
 
+        if(!$constraint->required && !$value){
+            return;
+        }
+
         if (null !== $constraint->normalizer) {
             $value = call_user_func($constraint->normalizer)($value);
         }
