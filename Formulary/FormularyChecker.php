@@ -114,8 +114,14 @@ class FormularyChecker
 
         if($form->count()){
             foreach ($form->getIterator() as $child) {
-                if(!$child->isValid()){
-                    $this->checkFormErrors($child, false, $parentName);
+                if(!$child->isSubmitted()){
+
+                    $this->errors["FORM_WARNING"][$parentName . '.' . $child->getName()] = "This value is not submitted";
+
+                }else{
+                    if(!$child->isValid()){
+                        $this->checkFormErrors($child, false, $parentName);
+                    }
                 }
             }
         }
